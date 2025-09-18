@@ -22,10 +22,18 @@ classifiers = [
 ]
 
 dependencies = [
-  "numpy", "matplotlib"
+  "numpy", 
+  "matplotlib",
+  "pandas" # Pandas is essential for data handling
 ]
 
 [project.optional-dependencies]
+interactive = [
+  "plotly" # For interactive plots
+]
+animation = [
+  "matplotlib>=3.8" # Some animation features may require a newer version
+]
 dev = [
   "pytest",
 ]
